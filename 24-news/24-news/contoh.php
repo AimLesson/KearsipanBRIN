@@ -17,7 +17,9 @@ html, body {
 body {
   margin: 0;
 }
-
+.body1{
+  margin: 0;
+}
 label {
   position: absolute;
   top: 50%;
