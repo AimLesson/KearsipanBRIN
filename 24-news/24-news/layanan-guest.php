@@ -309,105 +309,106 @@
 
 
 
-    <!-- Checkout Start -->
-    <div class="checkout">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="checkout-inner">
-                        <div class="billing-address">
-                            <h2>Form Peminjaman</h2>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Nama</label>
-                                    <input class="form-control" type="text" placeholder="Nama">
-                                    <br></br>
-                                </div>
+        <!-- Checkout Start -->
+        <div class="checkout">
+            <div class="container-fluid"> 
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="checkout-inner">
+                            <div class="billing-address">
+                                <h2>Form Peminjaman</h2>
+                                <form action="peminjaman.php" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Nama</label>
+                                        <input class="form-control" type="text" placeholder="Nama" name="nama">                                    
+                                        <br></br>
+                                    </div>
 
-                                <div class="col-md-6">
-                                    <label>NIP/NIK</label>
-                                    <input class="form-control" type="text" placeholder="NIP/NIK">
-                                    <br></br>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Keperluan</label>
-                                    <input class="form-control" type="text" placeholder="Keperluan">
-                                    <br></br>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Instansi</label>
-                                    <input class="form-control" type="text" placeholder="Instansi">
-                                    <br></br>
-                                </div>
+                                    <div class="col-md-6">
+                                        <label>NIP</label>
+                                        <input class="form-control" type="text" placeholder="NIP" name="nip">
+                                        <br></br>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Keperluan</label>
+                                        <input class="form-control" type="text" placeholder="Keperluan" name="keperluan">
+                                        <br></br>
+                                    </div>
+                                      <div class="col-md-6">
+                                        <label>Instansi</label>
+                                        <input class="form-control" type="text" placeholder="Instansi" name="instansi">
+                                        <br></br>
+                                    </div>
 
-                                <div class="col-md-12">
-                                    <label>Judul Arsip</label>
-                                    <input class="form-control" type="text" placeholder="Judul Arsip">
-                                    <br></br>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
-                                    <br></br>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>No Whatsapp</label>
-                                    <input class="form-control" type="text" placeholder="No Whatsapp">
-                                    <br></br>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Alamat</label>
-                                    <input class="form-control" type="text" placeholder="Alamat">
-                                    <br></br>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="surat_pengantar_peminjaman">Upload File:</label><br>
-                                    <input type="file" name="surat_pengantar_peminjaman"
-                                        id="surat_pengantar_peminjaman">
-                                    <a
-                                        href="https://docs.google.com/document/d/1gEU7-wBphsPWdEeYHuYSOzmkCyRp6y1T/edit?usp=sharing&ouid=113832426724188178732&rtpof=true&sd=true">Unduh
-                                        Format</a>
-                                </div>
+                                    <div class="col-md-12">
+                                        <label>Judul Arsip</label>
+                                        <input class="form-control" type="text" placeholder="Judul Arsip" name="judul_arsip">
+                                        <br></br>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>E-mail</label>
+                                        <input class="form-control" type="text" placeholder="E-mail" name="email">
+                                        <br></br>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>No Whatsapp</label>
+                                        <input class="form-control" type="text" placeholder="No Whatsapp" name="no_wa">
+                                        <br></br>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Alamat</label>
+                                        <input class="form-control" type="text" placeholder="Alamat" name="alamat">
+                                        <br></br>
+                                    </div>
+                                      <div class="col-md-6">
+                                    <label >Upload File:</label><br>
+                                <input type="file" id="surat" name="surat" />
 
+                                </div>
+                               
+                                   
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="checkout-inner">
-                        <div class="checkout-summary">
-                            <h1>Form Peminjaman</h1>
-                            <p>Judul Arsip<span> (Pembangkit Listrik Tenaga Cinta) </span></p>
-                            <p class="sub-total">Sub Total<span> 1 </span></p>
-                            <h2>Total<span> 1 </span></h2>
-                        </div>
-
-                        <div class="checkout-payment">
-                            <div class="payment-methods">
-                                <h1>Pinjam Ke Admin</h1>
-                                <div class="payment-method">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-1" name="payment">
-                                        <label class="custom-control-label" for="payment-1"></label>
-                                    </div>
-                                    <div class="payment-content" id="payment-1-show">
-                                        <p>
-                                            Admin akan menyetujui peminjaman jika memenuhi syarat.
-                                        </p>
-                                    </div>
-                                </div>
-
+                    <div class="col-lg-4">
+                        <div class="checkout-inner">
+                            <div class="checkout-summary">
+                                <h1>Form Peminjaman</h1>
+                                <p>Judul Arsip<span> (Pembangkit Listrik Tenaga Cinta) </span></p>
+                                <p class="sub-total">Sub Total<span> 1 </span></p>
+                                <h2>Total<span> 1 </span></h2>
                             </div>
-                            <div class="checkout-btn">
-                                <button>Ajukan Peminjaman</button>
+
+                            <div class="checkout-payment">
+                                <div class="payment-methods">
+                                    <h1>Pinjam Ke Admin</h1>
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="payment-1" name="payment" name="payment">
+                                            <label class="custom-control-label" for="payment-1"></label>
+                                        </div>
+                                        <div class="payment-content" id="payment-1-show">
+                                            <p>
+                                               Admin akan menyetujui peminjaman jika memenuhi syarat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                 <div class="checkout-btn">
+                                    <button type="submit" name="submit">Ajukan Peminjaman</button>
+                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+                   
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Checkout End -->
+        <!-- Checkout End -->
 
     <h1 style="font-size: 50px ;margin-left: 74px; margin-right: 74px; background-color:#00000010;">Tampilan Guest</h1>
 <table>
