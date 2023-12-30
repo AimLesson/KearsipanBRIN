@@ -87,7 +87,7 @@
                         <div class="d-inline-block text-center dd_position_relative ">
                             <select class="form-control fh5co_text_select_option">
                                 <option>Guest </option>
-                                <option>Log-in </option>
+                                <option>Login </option>
                             </select>
                         </div>
                         <div class="clearfix"></div>
